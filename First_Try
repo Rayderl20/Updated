@@ -1,0 +1,35 @@
+// Created on Thu March 19 2020
+
+int l_motor = 0;
+int r_motor = 2;
+int r_sensor = 9;
+int l_sensor = 8;
+
+int main()
+{
+	while(digital(r_sensor)<1)
+	{		motor(l_motor,100);
+		motor(r_motor,100);
+		
+	}
+	if(digital(r_sensor)==1){
+		motor(l_motor,100);
+		motor(r_motor,0);
+		
+		}
+		
+		if(digital(l_sensor)>0){
+			
+		
+		ao();
+			
+			
+			
+		
+		}
+		
+
+	
+	printf("Hello, World!\n");
+	return 0;
+}
